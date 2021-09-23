@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "migrate": "truffle migrate --network testnet --reset",
+    "compile": "truffle compile --network testnet",
+    "verify:strategy": "truffle run verify Strategy4BeltBlp --network testnet",
+    "verify:jar": "truffle run verify UsdtVault --network testnet",
+    "test": "npx builder test",
+    "coverage": "npx builder coverage"
+  },
+  "name": "belt-contract",
+  "version": "1.0.0",
+  "dependencies": {
+    "@openzeppelin/contracts": "3.4.1",
+    "dotenv": "^9.0.2"
+  },
+  "devDependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.5.11"
+  }
+}
